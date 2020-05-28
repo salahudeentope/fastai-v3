@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
-export_file_name = 'export.pkl'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1ugmr0SiRvDVvTTd5KPlL1ZNFxNQCAXcO'
+export_file_name = 'capstone_model.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['healthy_wheat', 'stem_rust', 'leaf_rust']
 path = Path(__file__).parent
 
 app = Starlette()
